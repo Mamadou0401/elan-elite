@@ -266,14 +266,19 @@ h1, h2, h3, h4 {
 
 @media (max-width: 992px) {
     .executif-grid {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding-bottom: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .executif-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
     .executif-grid .card-bureau {
-        min-width: 220px;
-        /* flex: 0 0 auto; */
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 }
 
@@ -611,4 +616,12 @@ footer {
     padding: 20px;
     background-color: #031d08;
     color: var(--jaune);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
 }
