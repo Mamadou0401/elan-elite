@@ -544,39 +544,67 @@ h1, h2, h3, h4 {
     border-color: var(--jaune);
     box-shadow: 0 0 10px var(--jaune);
 }
-
+/* ===========================
+   EN SAVOIR PLUS + MODALE
+=========================== */
 .btn-savoir-plus {
-  margin-top: 10px;
-  padding: 6px 16px;
-  background: transparent;
-  color: inherit;
-  border: 1px solid currentColor;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: opacity 0.2s, transform 0.2s;
+    align-self: flex-start;
+    margin-top: 12px;
+    padding: 6px 16px;
+    background: transparent;
+    color: var(--jaune);
+    border: 1px solid var(--jaune);
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
 }
+
 .btn-savoir-plus:hover {
-  opacity: 0.8;
-  transform: translateY(-2px);
+    background: var(--jaune);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.copresident-item .btn-savoir-plus {
+    align-self: auto;
 }
 
 .parcours-modal {
-  background: #0b1a2e;   /* adapte à la couleur de ton site */
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-}
-.parcours-modal .modal-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-.parcours-photo {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
+    background: #000;
+    color: var(--blanc);
+    border: 1px solid var(--sunset);
+    border-left: 6px solid var(--vert);
+    border-radius: 12px;
 }
 
+.parcours-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.parcours-modal .modal-title {
+    color: var(--blanc);
+    font-weight: 700;
+}
+
+.parcours-modal small {
+    color: var(--jaune);
+}
+
+.parcours-modal .modal-body {
+    line-height: 1.7;
+    text-align: left;
+}
+
+.parcours-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--jaune);
+}
 
 footer {
     text-align: center;
