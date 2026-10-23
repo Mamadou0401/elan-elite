@@ -273,7 +273,7 @@ h1, h2, h3, h4 {
     }
     .executif-grid .card-bureau {
         min-width: 220px;
-        flex: 0 0 auto;
+        /* flex: 0 0 auto; */
     }
 }
 
