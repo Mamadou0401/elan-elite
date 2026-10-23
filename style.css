@@ -148,6 +148,7 @@ h1, h2, h3, h4 {
         align-items: flex-end !important;
         min-height: 100svh;
         padding: 0 0 40px 0;
+        padding-top: 150px;
     }
 
     .hero-text-block {
@@ -172,6 +173,10 @@ h1, h2, h3, h4 {
     .hero .btn-tech,
     .hero .btn-outline-premium {
         width: 100%;
+    }
+
+    .hero-text-block p:nth-child(2) {
+        display: none;
     }
 }
 
