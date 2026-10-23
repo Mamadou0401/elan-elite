@@ -79,14 +79,23 @@
         <h3 class="subsection-title">Bureau Exécutif</h3>
         <div class="cards-grid executif-grid">
             <div class="card-bureau">
-                <div class="card-bureau-image">
-                    <img src="prési.jpeg" alt="Pa Lamine Ndiaye - Président">
-                </div>
-                <div class="card-bureau-body">
-                    <h4 class="card-bureau-title">Pa Lamine Ndiaye</h4>
-                    <p class="card-bureau-text">Président</p>
+    <div class="card-bureau-image">
+        <img src="prési.jpeg" alt="Pa Lamine Ndiaye - Président">
+    </div>
+            <div class="card-bureau-body">
+                <h4 class="card-bureau-title">Pa Lamine Ndiaye</h4>
+                <p class="card-bureau-text">Président</p>
+
+                <button type="button" class="btn-savoir-plus"
+                        data-bs-toggle="modal" data-bs-target="#parcoursModal">
+                    En savoir plus
+                </button>
+                <div class="parcours-content d-none">
+                    <p>Étudiant en Master 2 Urbanisme et aménagement du territoire à Toulouse...</p>
+                    <p>Deuxième paragraphe si besoin.</p>
                 </div>
             </div>
+        </div>
 
             <div class="card-bureau">
                 <div class="card-bureau-image">
@@ -380,6 +389,24 @@
 </section>
 
 </main>
+
+<div class="modal fade" id="parcoursModal" tabindex="-1" aria-labelledby="parcoursNom" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content parcours-modal">
+      <div class="modal-header">
+        <div class="d-flex align-items-center gap-3">
+          <img id="parcoursImg" src="" alt="" class="parcours-photo">
+          <div>
+            <h5 class="modal-title" id="parcoursNom"></h5>
+            <small id="parcoursRole"></small>
+          </div>
+        </div>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body" id="parcoursTexte"></div>
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
