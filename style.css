@@ -135,7 +135,10 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .hero {
-        background-position: left;
+        background-position: 80% center;
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+            url("Pa-lamine.jpeg");
     }
 }
 
