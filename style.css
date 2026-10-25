@@ -241,7 +241,7 @@ section {
 
 .card-bureau-image {
     width: 100%;
-    height: 100%;
+    height: 240px;
     overflow: hidden;
     background-color: #1a1a1a;
 }
