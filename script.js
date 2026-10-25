@@ -63,31 +63,3 @@ navLinks.forEach(link => {
         }
     });
 });
-
-document.querySelectorAll('.btn-savoir-plus').forEach(function (btn) {
-  btn.addEventListener('click', function () {
-    var carte = btn.closest('.card-bureau, .copresident-item');
-    var img = carte.querySelector('img');
-
-    document.getElementById('parcoursNom').textContent =
-      carte.querySelector('.card-bureau-title, h5').textContent;
-    document.getElementById('parcoursRole').textContent =
-      carte.querySelector('.card-bureau-text, p').textContent;
-    document.getElementById('parcoursImg').src = img ? img.getAttribute('src') : '';
-    document.getElementById('parcoursTexte').innerHTML =
-      carte.querySelector('.parcours-content').innerHTML;
-  });
-});
-
-
-/* ===========================
-   PROGRAMME : MENU DES 5 PILIERS EN HOVER
-   (survol sur ordinateur, clic conservé sur mobile)
-=========================== */
-document.querySelectorAll('#piliersMenu .pilier-tab').forEach(function (btn) {
-    btn.addEventListener('mouseenter', function () {
-        if (window.matchMedia('(hover: hover)').matches) {
-            bootstrap.Tab.getOrCreateInstance(btn).show();
-        }
-    });
-});
