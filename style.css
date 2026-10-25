@@ -110,7 +110,7 @@ section {
     padding-left: 15px;
     max-width: 780px;
     margin: 0;
-    text-align: left;
+    text-align: left !important; 
     line-height: 1.7;
     font-size: 1.05rem;
 }
