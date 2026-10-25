@@ -87,62 +87,9 @@
                     <h4 class="card-bureau-title">Pa Lamine Ndiaye</h4>
                     <p class="card-bureau-text mb-2">Président</p>
                     <!-- BOUTON DANS LA CARTE DU PRÉSIDENT -->
-                    <button class="btn btn-warning text-dark btn-sm fw-bold shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#en-savoir-plus" aria-expanded="false">
+                    <button class="btn btn-warning text-dark btn-sm fw-bold shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#fenetreParcours">
                         En savoir plus
                     </button>
-                </div>
-
-                <!-- PARCOURS DU PRÉSIDENT : CACHÉ PAR DÉFAUT -->
-                    <div class="collapse my-4" id="en-savoir-plus">
-                        <div class="p-4 rounded-3 shadow-sm bg-black text-white">
-                            <h3 class="text-center section-title text-white mb-4">Le Parcours du Président Pa Lamine Ndiaye</h3>
-                            
-                            <div class="row g-4">
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
-                                        <img src="parcours-1.jpeg" class="card-img-top" alt="Conseiller Municipal" style="height: 180px; object-fit: cover;">
-                                        <div class="card-body">
-                                            <p class="card-text small">Son engagement politique lui a permis d’être élu conseiller municipal en 2022, faisant de lui l’un des plus jeunes élus de l’histoire politique du Sénégal.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
-                                        <img src="parcours-2.jpeg" class="card-img-top" alt="Club CEDEAO" style="height: 180px; object-fit: cover;">
-                                        <div class="card-body">
-                                            <p class="card-text small">Fervent panafricaniste, il est membre fondateur du Club CEDEAO et en devient le premier président à l’Université Amadou Mahtar Mbow en 2024. Il a notamment coordonné la 8ᵉ édition de la Journée africaine de lutte contre la corruption.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
-                                        <img src="parcours-3.jpeg" class="card-img-top" alt="Amicale Kaolack" style="height: 180px; object-fit: cover;">
-                                        <div class="card-body">
-                                            <p class="card-text small">Président de l’Amicale des Étudiants Ressortissants de la Région de Kaolack à l’université Amadou Mahtar Mbow de 2022 à 2023.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
-                                        <img src="prési.jpeg" class="card-img-top" alt="Parcours Actuel" style="height: 180px; object-fit: cover;">
-                                        <div class="card-body">
-                                            <p class="card-text small"><strong>Parcours Actuel :</strong> Étudiant en Master 2, il est aujourd'hui le candidat tête de liste de la Coalition ÉLAN x ELITE pour la Présidence de l'ASEST, portant la vision et le programme <strong>TERANGA 360</strong>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- BOUTON POUR CACHER -->
-                            <div class="text-center mt-4">
-                                <button class="btn btn-warning text-dark fw-bold px-4 py-2 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#en-savoir-plus">
-                                    Masquer le parcours
-                                </button>
-                            </div>
-
-                    </div>
                 </div>
             </div>
 
@@ -827,6 +774,66 @@
 </div>
 
 </main>
+
+<!-- MODALE : PARCOURS DU PRÉSIDENT (fenêtre cachée, s'ouvre au clic sur "En savoir plus") -->
+<div class="modal fade" id="fenetreParcours" tabindex="-1" aria-labelledby="fenetreParcoursLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content bg-black text-white">
+
+      <div class="modal-header border-secondary">
+        <h5 class="modal-title" id="fenetreParcoursLabel">Le Parcours du Président Pa Lamine Ndiaye</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+            <!-- BLOC 1 : Conseiller Municipal -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
+                    <img src="parcours-1.jpeg" class="card-img-top" alt="Conseiller Municipal" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text small">Son engagement politique lui a permis d’être élu conseiller municipal en 2022, faisant de lui l’un des plus jeunes élus de l’histoire politique du Sénégal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOC 2 : Club CEDEAO -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
+                    <img src="parcours-2.jpeg" class="card-img-top" alt="Club CEDEAO" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text small">Fervent panafricaniste, il est membre fondateur du Club CEDEAO et en devient le premier président à l’Université Amadou Mahtar Mbow en 2024. Il a notamment coordonné la 8ᵉ édition de la Journée africaine de lutte contre la corruption.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOC 3 : Amicale Kaolack -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
+                    <img src="parcours-3.jpeg" class="card-img-top" alt="Amicale Kaolack" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text small">Président de l’Amicale des Étudiants Ressortissants de la Région de Kaolack à l’université Amadou Mahtar Mbow de 2022 à 2023.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOC 4 : Parcours Actuel -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-black text-white h-100 border-0 border-start border-4 border-success rounded-3 shadow">
+                    <img src="prési.jpeg" class="card-img-top" alt="Parcours Actuel" style="height: 180px; object-fit: cover;">
+                    <div class="card-body">
+                        <p class="card-text small"><strong>Parcours Actuel :</strong> Étudiant en Master 2, il est aujourd'hui le candidat tête de liste de la Coalition ÉLAN x ELITE pour la Présidence de l'ASEST, portant la vision et le programme <strong>TERANGA 360</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
